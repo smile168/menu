@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import QRCode from 'react-qr-code';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <QRCode value={<App/>}/>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
