@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import QRCode from 'react-qr-code';
+import MenuPage from './MenuPage';
+import './MenuPage.css'
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <QRCode value={<App/>}/>
-    <App/>
+    <MenuPage/>
+    {/* <QRCode value="https://no1bbq.netlify.app/"/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

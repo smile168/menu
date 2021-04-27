@@ -1,0 +1,26 @@
+.menu-section{
+    width: 300px;
+    border: 10px solid yellow;
+    padding: 30px;
+    margin: 0px;
+}
+
+.menu-section-header{
+    text-align: left;
+    font-size: x-large;
+}
+
+.menu-item{
+    display: flex;
+    margin: 1%;
+}
+
+.item-name{
+    flex:1;
+    text-align: left;
+}
+
+.item-price{
+    flex:1;
+    text-align: right;
+}
