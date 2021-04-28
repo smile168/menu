@@ -3,8 +3,7 @@ import './MenuSection.css'
 function MenuSection (props) {
     return (
         <div className="menu-section">
-            <div className="menu-section-header">{props.chinese}</div>
-            <div>
+            {/* <div className="menu-section-header">{props.chinese}</div> */}
                 {props.items.map(
                     item => 
                     <div className="menu-item">
@@ -13,7 +12,6 @@ function MenuSection (props) {
                         <div className="item-price">{item.name}<br/>{item.price}</div>
                     </div>)
                 }
-            </div>
         </div>
     ) 
 }

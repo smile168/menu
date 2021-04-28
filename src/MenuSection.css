@@ -1,8 +1,8 @@
 .menu-section{
-    width: 280px;
-    border: 10px solid goldenrod;
-    padding: 30px;
-    margin: 0px;
+    flex:1;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .menu-section-header{
@@ -11,9 +11,10 @@
 }
 
 .menu-item{
+    flex: 0 0 33.3333%;
     display: flex;
-    align-items: center;
-    margin: 10%;
+    flex-direction: column;
+    margin: 5%;
 }
 
 .item-name{
@@ -23,10 +24,11 @@
 
 .item-price{
     flex:1;
+    width: 100%;
     text-align: right;
 }
 
 .item-picture{
-    flex:0.5;
-    width: 30%;
+    flex:1;
+    width: 100%;
 }
