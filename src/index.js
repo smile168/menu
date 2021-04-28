@@ -4,6 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import MenuPage from './MenuPage';
 import './MenuPage.css'
+import QRCode from "react-qr-code";
 
 
 ReactDOM.render(

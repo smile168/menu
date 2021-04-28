@@ -1,7 +1,9 @@
 import './MenuSection.css'
+import rootPath from './images/冷锅串串.jpg'
 
 function MenuSection (props) {
     // console.log(props.data)
+    const images = require.context('./images', true);
     return (
         <div className="menu-section">
             <div className="menu-section-header">{props.chinese}</div>
@@ -9,8 +11,9 @@ function MenuSection (props) {
                 {props.items.map(
                     item => 
                     <div className="menu-item">
-                        <div className="item-name">{item.name}</div>
-                        <div className="item-price">{item.price}</div>
+                        <img className="item-picture" 
+                            src={require(`./images/${props.chinese}/${item.name}.jpg`).default}/>
+                        <div className="item-price">{item.name}<br/>{item.price}</div>
                     </div>)
                 }
             </div>

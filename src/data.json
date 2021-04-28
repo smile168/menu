@@ -69,7 +69,6 @@
     "chinese": "劲爆炒菜",
     "english":"Cooking",
     "items":[
-      {"name": "辣炒海瓜子", "price":"$10.99"},
       {"name":"辣炒海瓜子","price":"$10.99"},
       {"name":"麻辣鸡架大盘","price":"$10.99"},
       {"name":"锅包肉","price":"$11.99"},
@@ -131,15 +130,15 @@
       {"name": "青岛啤酒", "price":"$3.99"},
       {"name": "科罗娜", "price":"$3.5"},
       {"name": "Heineken", "price":"$3.5"},
-      {"name": "Blue Moon", "price":"$3.99"},
-      {"name": "1664 Beer", "price":"$4.5"},
-      {"name": "Stella Attois", "price":"$4.5"},
-      {"name": "扎啤  16oz", "price":"$3"},
-      {"name": "扎啤王  40oz", "price":"$5.99"},
-      {"name": "酒炮  3L", "price":"$18.99"},
-      {"name": "酒炮  2L", "price":"$13.99"},
+      {"name": "BlueMoon", "price":"$3.99"},
+      {"name": "1664Beer", "price":"$4.5"},
+      {"name": "StellaAttois", "price":"$4.5"},
+      {"name": "扎啤", "price":"$3/16oz"},
+      {"name": "扎啤王", "price":"$5.99/40oz"},
+      {"name": "大酒炮", "price":"$18.99/3L"},
+      {"name": "小酒炮", "price":"$13.99/2L"},
       {"name": "酸梅汤", "price":"$2.99"},
-      {"name": "酸梅汤", "price":"$7.99/扎"},
+      {"name": "大酸梅汤", "price":"$7.99/扎"},
       {"name": "韩国梨汁", "price":"$2.75"},
       {"name": "韩国橙汁", "price":"$2.75"},
       {"name": "韩国葡萄汁", "price":"$2.75"},
@@ -153,7 +152,7 @@
       {"name": "可乐", "price":"$1.5"},
       {"name": "雪碧", "price":"$1.5"},
       {"name": "芬达", "price":"$1.5"},
-      {"name": "Diet Coke", "price":"$1.5"}
+      {"name": "DietCoke", "price":"$1.5"}
     ]
   }
 ]

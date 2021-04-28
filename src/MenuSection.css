@@ -1,6 +1,6 @@
 .menu-section{
-    width: 300px;
-    border: 10px solid yellow;
+    width: 280px;
+    border: 10px solid goldenrod;
     padding: 30px;
     margin: 0px;
 }
@@ -12,7 +12,8 @@
 
 .menu-item{
     display: flex;
-    margin: 1%;
+    align-items: center;
+    margin: 10%;
 }
 
 .item-name{
@@ -23,4 +24,9 @@
 .item-price{
     flex:1;
     text-align: right;
+}
+
+.item-picture{
+    flex:0.5;
+    width: 30%;
 }
