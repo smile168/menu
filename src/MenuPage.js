@@ -5,7 +5,8 @@ import './fonts/TAKOYAKI.ttf';
 import './fonts/Harukaze.ttf';
 import React, { useEffect, useState } from "react";
 import { Checkbox } from 'antd';
-
+import { Radio } from 'antd';
+import 'antd/dist/antd.css';
 
 function MenuPage () {
     const[menuSections, setMenuSections] = useState(data);
@@ -22,21 +23,26 @@ function MenuPage () {
             setMenuSections(after);
         }
     }
+    const onRadioButtonClick = (name) => {
+        setMenuSections(data.filter(sec => sec.chinese === name))
+    }
     return (
         <div className="menu-page">
             <header>
                 No.1 BBQ
             </header>
-            {/* todo: take this inline out */}
-        <div style={{"width":"75%","alignSelf":'center'}}> 
+        <Radio.Group 
+            buttonStyle="outline"
+            size="large"> 
             {data.map(section => 
-                <Checkbox 
-                    style={{"margin": "10%", "borderTop":"10%"}}
-                    defaultChecked={true}
-                    onClick={(e) => {onCheckMenuSection(section.chinese, e.target.checked)}}>
+                <Radio.Button 
+                    style={{"margin":"1%"}}
+                    onClick={(e) => {onRadioButtonClick(section.chinese)}}
+                    value={section.chinese}
+                >
                     {section.chinese}                    
-                </Checkbox>)}    
-        </div>                   
+                </Radio.Button>)}    
+        </Radio.Group>                   
         {menuSections.map(section =>         
             <MenuSection 
             {...section}

@@ -24,9 +24,10 @@
 
 header {
     font-family:"Harukaze";
-    font-size: xx-large;
+    font-size: 50px;
     align-self: start;
-    margin: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
 
