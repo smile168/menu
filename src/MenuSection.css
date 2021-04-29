@@ -6,10 +6,10 @@
 }
 
 .menu-item{
-    flex: 0 0 40%;
+    flex: 0 0 46%;
     display: flex;
     flex-direction: column;
-    margin: 5%;
+    margin: 2%;
 }
 
 .item-name{
@@ -17,7 +17,7 @@
     text-align: left;
 }
 
-.item-price{
+.item-details{
     flex:1;
     width: 100%;
     text-align: right;

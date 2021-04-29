@@ -9,7 +9,10 @@ function MenuSection (props) {
                     <div className="menu-item">
                         <img className="item-picture" 
                             src={require(`./images/${props.chinese}/${item.name}.jpg`).default}/>
-                        <div className="item-price">{item.name}<br/>{item.price}</div>
+                        <div className="item-details">
+                            <div>{item.name}</div>
+                            <div>{item.price}</div>
+                        </div>
                     </div>)
                 }
         </div>
