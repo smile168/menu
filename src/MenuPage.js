@@ -30,7 +30,8 @@ function MenuPage () {
             {/* todo: take this inline out */}
         <div style={{"width":"75%","alignSelf":'center'}}> 
             {data.map(section => 
-                <Checkbox
+                <Checkbox 
+                    style={{"margin": "10%", "borderTop":"10%"}}
                     defaultChecked={true}
                     onClick={(e) => {onCheckMenuSection(section.chinese, e.target.checked)}}>
                     {section.chinese}                    
