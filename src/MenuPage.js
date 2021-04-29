@@ -17,7 +17,7 @@ function MenuPage () {
         // check -- add
         if(menuSections == undefined || !menuSections.some(e => e.chinese === name) && checked){
             // todo: simplify 
-            menuSections.push(data.find(sec => sec.chinese === name));
+            menuSections.unshift(data.find(sec => sec.chinese === name));
             let after = menuSections.filter(e => e.chinese != 'none');
             setMenuSections(after);
         }
