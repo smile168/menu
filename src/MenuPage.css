@@ -1,5 +1,32 @@
+@font-face {
+    font-family: "ChineseDragon";
+    src: local("ChineseDragon"),
+      url("./fonts/ChineseDragon.ttf") format("truetype");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "TAKOYAKI";
+    src: local("TAKOYAKI"),
+      url("./fonts/TAKOYAKI.ttf") format("truetype");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "Harukaze";
+    src: local("Harukaze"),
+      url("./fonts/Harukaze.ttf") format("truetype");
+    font-weight: normal;
+  }
 .menu-page {
     text-align: center;
     flex-direction: column;
     display: flex;
 }
+
+header {
+    font-family:"Harukaze";
+    font-size: xx-large;
+    align-self: start;
+    margin: 5%;
+}
+
+

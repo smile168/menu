@@ -5,11 +5,6 @@
     flex-direction: row;
 }
 
-.menu-section-header{
-    text-align: left;
-    font-size: x-large;
-}
-
 .menu-item{
     flex: 0 0 33.3333%;
     display: flex;
