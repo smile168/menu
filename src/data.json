@@ -1,7 +1,6 @@
 [
   {
     "chinese":"烧烤",
-    "english":"BBQ",
     "items": [
         {"name":"羊肉串","price":"$1.99/串"},
         {"name":"肥牛小串","price":"$5.99/10串"},
@@ -49,7 +48,6 @@
   },
   {
     "chinese": "素食主义",
-    "english":"Vegetable",
     "items":[
       {"name": "烤大蒜", "price":"$1.5/串"},
       {"name":"烤韭菜","price":"$5.99/盘"},
@@ -69,7 +67,6 @@
   },
   {
     "chinese": "劲爆炒菜",
-    "english":"Cooking",
     "items":[
       {"name":"辣炒海瓜子","price":"$10.99"},
       {"name":"辣炒鸡脆骨","price":"$10.99"},
@@ -84,10 +81,9 @@
   },
   {
     "chinese": "凉菜",
-    "english":"Cold Dish",
     "items":[
       {"name": "香辣拌板筋", "price":"$8.99"},
-      {"name": "东北花生", "price":"$7.99"},
+      {"name": "东北花菜", "price":"$7.99"},
       {"name": "黄瓜花生米", "price":"$6.99"},
       {"name": "黄瓜拌猪耳", "price":"$7.99"},
       {"name": "陈醋菠菜花生米", "price":"$7.99"}
@@ -95,7 +91,6 @@
   },
   {
     "chinese": "特色菜",
-    "english":"Chef-Special",
     "items":[
       {"name": "麻辣小龙虾", "price":"$16.99"},
       {"name": "铁板鱿鱼", "price":"$9.99"},
@@ -107,7 +102,6 @@
   },
   {
     "chinese": "特色主食",
-    "english":"Staple food",
     "items":[
       {"name": "凉皮儿", "price":"$8.99"},
       {"name": "烤冷面", "price":"$7.99"},
@@ -127,7 +121,6 @@
   },
   {
     "chinese": "酒水",
-    "english":"Drinks",
     "items":[
       {"name": "铝瓶百威", "price":"$3"},
       {"name": "青岛啤酒", "price":"$3.99"},

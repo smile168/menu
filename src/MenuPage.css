@@ -16,6 +16,12 @@
       url("./fonts/Harukaze.ttf") format("truetype");
     font-weight: normal;
   }
+  @font-face {
+    font-family: "xing";
+    src: local("xing"),
+      url("./fonts/xing.ttf") format("truetype");
+    font-weight: normal;
+  }
 .menu-page {
     text-align: center;
     flex-direction: column;
@@ -23,11 +29,14 @@
 }
 
 header {
-    font-family:"Harukaze";
     font-size: 50px;
     align-self: start;
     margin-left: 5%;
     margin-top: 5%;
 }
 
+* {
+  font-size: 100%;
+  font-family: "xing";
+ }
 

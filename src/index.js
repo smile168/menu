@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import MenuPage from './MenuPage';
-import './MenuPage.css'
+import './MenuPage.css';
+import './i18n';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <MenuPage/>
+    <Suspense fallback={<div>loading...</div>}>
+      <MenuPage/>      
+    </Suspense>
+
     {/* <QRCode value="https://no1bbq.netlify.app/"/> */}
   </React.StrictMode>,
   document.getElementById('root')
