@@ -7,6 +7,7 @@ import './fonts/xing.ttf';
 import React, { useEffect, useState } from "react";
 import { Checkbox } from 'antd';
 import { Radio } from 'antd';
+import {Button} from 'antd';
 import 'antd/dist/antd.css';
 import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
@@ -40,8 +41,8 @@ function MenuPage () {
                 {t("title")}
             </header>
             <div>
-                <button onClick={() => changeLang('cn')}>中文</button>
-                <button onClick={() => changeLang('en')}>English</button>
+                <Button onClick={() => changeLang('cn')}>中文</Button>
+                <Button onClick={() => changeLang('en')}>English</Button>
             </div>
         <Radio.Group 
             buttonStyle="outline"
