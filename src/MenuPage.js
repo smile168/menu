@@ -11,6 +11,7 @@ import {Button} from 'antd';
 import 'antd/dist/antd.css';
 import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
+import {Switch} from 'antd';
 
 
 function MenuPage () {
@@ -32,17 +33,29 @@ function MenuPage () {
     const onRadioButtonClick = (name) => {
         setMenuSections(data.filter(sec => sec.chinese === name))
     }
+    const onSwitchClick = (status) => {
+        if(status) i18n.changeLanguage("cn");
+        else i18n.changeLanguage("en");           
+    }
     const changeLang = (lang) => {
         i18n.changeLanguage(lang)
     }
     return (
         <div className="menu-page">
-            <header>
-                {t("title")}
-            </header>
             <div>
-                <Button onClick={() => changeLang('cn')}>中文</Button>
-                <Button onClick={() => changeLang('en')}>English</Button>
+            <header>
+                <div>
+                    {t("title")}
+                </div>
+            </header>
+            </div>
+        <div>
+                <Switch 
+                    style={{"float": "right", "margin":"3%"}}
+                    onClick={(checked) => onSwitchClick(checked)}
+                    checkedChildren="Lang Switch" 
+                    unCheckedChildren="切至中文" 
+                    defaultChecked />
             </div>
         <Radio.Group 
             buttonStyle="outline"
