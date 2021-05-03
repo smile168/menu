@@ -15,7 +15,7 @@ import {Switch} from 'antd';
 
 
 function MenuPage () {
-    const[menuSections, setMenuSections] = useState(data);
+    const[menuSections, setMenuSections] = useState(data.filter(e => e.chinese ==="烧烤"));
     const { t, i18n } = useTranslation();
     const onCheckMenuSection = (name, checked) => {
         // uncheck
@@ -58,8 +58,9 @@ function MenuPage () {
                     defaultChecked />
             </div>
         <Radio.Group 
-            buttonStyle="outline"
-            size="large"> 
+            buttonStyle="solid"
+            size="large"
+            defaultValue={data[0].chinese}> 
             {data.map(section => 
                 <Radio.Button 
                     style={{"margin":"1%"}}
