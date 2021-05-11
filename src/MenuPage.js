@@ -4,18 +4,15 @@ import './fonts/ChineseDragon.ttf';
 import './fonts/TAKOYAKI.ttf';
 import './fonts/Harukaze.ttf';
 import './fonts/xing.ttf';
-import React, { useEffect, useState } from "react";
-import { Checkbox } from 'antd';
-import { Radio } from 'antd';
-import {Button} from 'antd';
+import React, { useState } from "react";
+import { Button, Radio } from 'antd';
 import 'antd/dist/antd.css';
 import { useTranslation } from 'react-i18next';
-import { Trans } from 'react-i18next';
-import {Switch} from 'antd';
 
 
 function MenuPage () {
     const[menuSections, setMenuSections] = useState(data.filter(e => e.chinese ==="烧烤"));
+    const[lang, setLang] = useState("English");
     const { t, i18n } = useTranslation();
     const onCheckMenuSection = (name, checked) => {
         // uncheck
@@ -33,12 +30,14 @@ function MenuPage () {
     const onRadioButtonClick = (name) => {
         setMenuSections(data.filter(sec => sec.chinese === name))
     }
-    const onSwitchClick = (status) => {
-        if(status) i18n.changeLanguage("cn");
-        else i18n.changeLanguage("en");           
-    }
-    const changeLang = (lang) => {
-        i18n.changeLanguage(lang)
+    const onLangClick = (lang) => {
+        if(lang === "English") {
+            setLang("中文");
+            i18n.changeLanguage("en");
+        } else {
+            setLang("English")
+            i18n.changeLanguage("cn");
+        }
     }
     return (
         <div className="menu-page">
@@ -48,15 +47,16 @@ function MenuPage () {
                     {t("title")}
                 </div>
             </header>
-            </div>
+        </div>
         <div>
-                <Switch 
-                    style={{"float": "right", "margin":"3%"}}
-                    onClick={(checked) => onSwitchClick(checked)}
-                    checkedChildren="Lang Switch" 
-                    unCheckedChildren="切至中文" 
-                    defaultChecked />
-            </div>
+            <Button
+                style={{"float": "right", "margin":"3%"}}
+                size="small"
+                shape="round"
+                type="primary"
+                onClick={() => onLangClick(lang)}
+            >{lang}</Button>
+        </div>
         <Radio.Group 
             buttonStyle="solid"
             size="large"
