@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next';
 
 
 function MenuPage () {
-    const[menuSections, setMenuSections] = useState(data.filter(e => e.chinese ==="烧烤"));
+    const[menuSections, setMenuSections] = useState(data.filter(e => e.chinese ==="烤串肉类"));
     const[lang, setLang] = useState("English");
     const { t, i18n } = useTranslation();
     const onCheckMenuSection = (name, checked) => {

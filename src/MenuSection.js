@@ -6,7 +6,7 @@ function MenuSection (props) {
     const findImg = (cat, itemName) => {
         let img;
         try {
-            img = require(`./images/${cat}/${itemName}.jpg`).default
+            img = require(`./images/${itemName}.jpg`).default
         } catch(error) {
             img = require(`./images/alt.jpg`).default
         }
