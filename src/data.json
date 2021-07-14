@@ -134,7 +134,7 @@
       { "name": "东北炸酱面", "price": "$8.99" },
       { "name": "酸辣粉", "price": "$9.99" },
       { "name": "土豆粉", "price": "$12.99" },
-      { "name": "酸菜汆白肉血肠", "price": "$17.99" }
+      { "name": "酸菜白肉加血肠", "price": "$14.99+$4.99" }
     ]
   },
   {
@@ -143,7 +143,7 @@
       { "name": "铝瓶百威", "price": "$3.5" },
       { "name": "青岛啤酒-售空", "price": "$3.99" },
       { "name": "科罗娜", "price": "$3.5" },
-      { "name": "Heineken", "price": "$3.5" },
+      { "name": "Heineken", "price": "$3.99" },
       { "name": "BlueMoon", "price": "$3.99" },
       { "name": "1664Beer", "price": "$4.5" },
       { "name": "StellaAttois", "price": "$4.5" },
